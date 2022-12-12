@@ -19,7 +19,6 @@
     </header>
     <!-- //header -->
     <hr />
-
     <!-- contaniner -->
     <div id="container">
         <!-- spot -->
@@ -208,14 +207,22 @@
     </div>
     <!-- //contaniner -->
     <hr />
-
-
     <!-- footer -->
-    <div id="footer">
-       
+    <div id="footer">      
     </div>
     <!-- //footer -->
-
 </div>
+<script>
+    async function fetchHtmlAsText(url) {
+        const response = await fetch(url);
+        return await response.text();
+    }
+    
+    async function importPage(target) {
+        document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+    }
+    importPage('header');
+    importPage('footer');
+    </script>
 </body>
 </html>
