@@ -21,32 +21,6 @@ a:hover{text-decoration: none; color: #333;}
     #content{width: 1140px; margin: 0 auto; padding: 100px 0 160px;}
 #footer{position: relative; width: 100%; height: 185px; background-color: #474a4f;}
     .foot_inner{width: 1142px; margin: 0 auto; padding: 20px 0;}
-
-
-/* content */
-/* spot */
-.spot{width: 100%; height: 321px; background: url(../images/careers_visual_img.jpg) no-repeat 50% 0; color: #fff;}
-.spot_inner>h2{font-size: 46px; margin-bottom: 15px;}
-.spot_inner>p{font-size: 16px; color: #eee;}
-.spot_inner>p.path{/*padding-top: 70px;*/ position: absolute; bottom: 20px; right: 0; text-align: right; font-size: 14px; color: #ccc;}
-
-/* content */
-p.info_txt{text-align:  right; margin-bottom: 10px;}
-
-table.job{width: 100%; margin-bottom: 60px;}
-.job th,.job td{height: 60px; border: 1px solid #ccc; text-align: center;}
-
-
-.job thead th{border-top: 1px solid #000; background-color: #f3f3f3; font-size: 18px;}
-.job thead th:first-of-type{width: 120px; border-left: none;}
-.job thead th:nth-of-type(2){width: 640px;}
-.job thead th:last-of-type{width: 380px; border-right: none;}
-
-.job tbody td{border-top: none; font-size: 16px;}
-.job tbody td:first-of-type{border-left: none;}
-.job tbody td:last-of-type{border-right: none;}
-.job tbody td:last-of-type td{border-bottom: 1px solid #000;}
-
 /* header */
 /* 로고 */
 h1.logo{position: absolute; left: 30px; top:18px;}
@@ -58,9 +32,9 @@ nav.gnb>ul{width: 100%; text-align: center;}
 nav.gnb>ul>li{display: inline-block; padding: 0 45px; line-height: 70px; }
 
 nav.gnb>ul>li>a{display: inline-block; position: relative;font-weight: 600; font-size: 18px; color: #000;}
-nav.gnb>ul>li>a:after{content:"''"; position: absolute; left:50%; bottom: -2px; 
+nav.gnb>ul>li>a:after{content:''; position: absolute; left:50%; bottom: -2px; 
     transform: translateX(-50%); width: 0; height: 0; opacity: 0; background: #043285;
-    transition: width .4s ease-in-out 0s;}
+    transition: width 0.4s ease-in-out 0s;}
 nav.gnb>ul>li:hover>a:after{width: 100%; height: 3px; opacity: 1;}
 
 nav.gnb>ul>li>div{display: none; position: absolute; left: 0; width: 100%; line-height: 40px;}
@@ -81,13 +55,14 @@ nav.gnb>ul>li:nth-child(4)>div>ul>li{height: 231px;}
 nav.gnb>ul>li:nth-child(5)>div>ul>li{height: 164px;}
 
 .gnb_button{margin-bottom: 30px;}
-.gnb_button>a{display: inline-block; border: 1px solid #e2e2e2; border-radius: 5px;  padding: 10px 20x; 
-    background: #fff url(../images/btn_arrow_ico_l.png) no-repeat 95% 50%; text-align: left; line-height: 30px;}
+.gnb_button>a{display: inline-block;width: 830px;height: 70px; border: 1px solid #e2e2e2; border-radius: 5px;  
+    padding: 10px 20x;box-sizing: border-box; margin-top: 20px;
+    background: #fff url(../images/btn_arrow_ico_l.png) no-repeat 95% 50%; text-align: left; line-height: 30px;
+}
 
-nav.gnb>ul>li:nth-child(1)>div>div.gnb_button>a{width: 780px; height: 70px; background-position: 97% 50%;}
-nav.gnb>ul>li:nth-child(1)>div>div.gnb_button>a>strong{ color: #1428a0;}
-
-nav.gnb>ul>li:nth-child(4)>div>div.gnb_button>a{width: 320px; height: 80px; margin-right: 5px;}
+/* nav.gnb>ul>li:nth-child(1)>div>div.gnb_button>a{width: 780px; height: 70px; background-position: 97% 50%;} */
+.gnb_button:nth-of-type(1)>a>strong{ color: #1428a0;font-weight: 700;}
+/* .gnb_button>a{width: 320px; height: 80px; margin-right: 5px;} */
 
 /* 탑메뉴 */
 dl.topMenu{position: absolute; right:60px; top:0;}
@@ -142,6 +117,32 @@ div.srch_inner>form>ul>li:last-child{float: right; margin-right: 0;}
 
 div>a.btn_srch_close{position: absolute; right: 0; top:0; width: 60px; height: 70px; background: #043285 url(../images/srch_pop_close.png) no-repeat 50% 50%;
     text-indent: -9999px; overflow: hidden;}
+
+
+/* content */
+/* spot */
+.spot{width: 100%; height: 321px; background: url(../images/careers_visual_img.jpg) no-repeat 50% 0; color: #fff;}
+.spot_inner>h2{font-size: 46px; margin-bottom: 15px;}
+.spot_inner>p{font-size: 16px; color: #eee;}
+.spot_inner>p.path{/*padding-top: 70px;*/ position: absolute; bottom: 20px; right: 0; text-align: right; font-size: 14px; color: #ccc;}
+
+/* content */
+p.info_txt{text-align:  right; margin-bottom: 10px;}
+
+table.job{width: 100%; margin-bottom: 60px;}
+.job th,.job td{height: 60px; border: 1px solid #ccc; text-align: center;}
+
+
+.job thead th{border-top: 1px solid #000; background-color: #f3f3f3; font-size: 18px;}
+.job thead th:first-of-type{width: 120px; border-left: none;}
+.job thead th:nth-of-type(2){width: 640px;}
+.job thead th:last-of-type{width: 380px; border-right: none;}
+
+.job tbody td{border-top: none; font-size: 16px;}
+.job tbody td:first-of-type{border-left: none;}
+.job tbody td:last-of-type{border-right: none;}
+.job tbody td:last-of-type td{border-bottom: 1px solid #000;}
+
 
 /* footer */
 #footer:after{display: block; content: ""; clear: both;}
