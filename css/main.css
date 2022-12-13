@@ -12,6 +12,7 @@ body{
 a{text-decoration: none; color: #333;}
 a:hover{text-decoration: none; color: #333;}
 
+
 /* layout */
 #wrap{ width: 100vw;overflow-x: hidden;}
     #header{z-index: 40; position: relative; width: 100%; height: 70px;}
@@ -151,13 +152,26 @@ a.btn_next{right: 30px; background-position: -30px 0;}
 /* content1 */
 
 .content1::after{content: ''; clear: both; display: block;}
+.content1>.newsroom{
+  opacity: 0;transform: translateY(50px);
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
-.content1>.newsroom>h2{font-size: 38px; font-weight: 600; text-align: center; margin-bottom: 70px; line-height: 1;}
+.content1>.newsroom>h2{font-size: 38px; font-weight: 600; text-align: center; margin-bottom: 70px; line-height: 1; opacity: 0;}
 .content1>.newsroom>ul{height: 200px; margin-bottom: 48px;display: flex; justify-content: space-between;}
 .content1>.newsroom>ul>li{width: 360px;height: 360px;}
 .content1>.newsroom>ul>li::after{
     content: '';display: block;position: absolute;
-    width: 360px;height: 3px;bottom:-510px;margin: 0;padding: 0;
+    width: 360px;height: 3px;bottom:-162px;margin: 0;padding: 0;
     background-color: rgb(0, 0, 73);display: none;
 }
 .content1>.newsroom>ul>li>dl{text-align: left;padding: 20px 0 0 15px; }
@@ -195,7 +209,9 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     padding-top: 50px;
     padding-left: 50px;
     box-sizing: border-box;
+    opacity: 0;transform: translateY(50px);
 }
+
 .newsletter>div{
     width: 1200px; height: 180px;
     background: url(../images/bg_newsletter.jpg)no-repeat 0 0;
@@ -232,6 +248,9 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     background-size: 5px 9px;
     text-align: center;
     line-height: 3;
+}
+.PR_Hall{
+    opacity: 0;transform: translateY(50px);
 }
 .PR_Hall>a>img{
     margin-top: -50px;
