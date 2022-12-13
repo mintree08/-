@@ -142,7 +142,20 @@ table.job{width: 100%; margin-bottom: 60px;}
 .job tbody td:first-of-type{border-left: none;}
 .job tbody td:last-of-type{border-right: none;}
 .job tbody td:last-of-type td{border-bottom: 1px solid #000;}
-
+#content>.faq{
+    width: 1140px;height: 75px; position: absolute;
+    border: 1px solid rgb(162, 162, 162);
+    top: 1250px;font-size: 15px;
+}
+#content>.faq>p{
+   transform: translate(30px, 30px);
+}
+#content>.faq>a{
+    position: absolute;right: 30px;
+    width: 70px;height: 20px;background-color: #043285;
+    text-align: center;color: #fff;
+    padding: 10px 20px;
+}
 
 /* footer */
 #footer:after{display: block; content: ""; clear: both;}
