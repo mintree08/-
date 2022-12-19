@@ -7,7 +7,7 @@
 body{
     width: 100vw;overflow-x: hidden;
     font-size: 14px; font-family: 'Noto Sans', sans-serif, Helvetica, sans-serif; color: #333;
-    letter-spacing: -0.5;
+    letter-spacing: -0.5px;
 }
 a{text-decoration: none; color: #333;}
 a:hover{text-decoration: none; color: #333;}
@@ -61,7 +61,7 @@ nav.gnb>ul>li:nth-child(5)>div>ul>li{height: 164px;}
 
 .gnb_button{margin-bottom: 30px;}
 .gnb_button>a{display: inline-block;width: 830px;height: 70px; border: 1px solid #e2e2e2; border-radius: 5px;  
-    padding: 10px 20x;box-sizing: border-box; margin-top: 20px;
+    padding: 10px 20px;box-sizing: border-box; margin-top: 20px;
     background: #fff url(../images/btn_arrow_ico_l.png) no-repeat 95% 50%; text-align: left; line-height: 30px;
 }
 
@@ -193,7 +193,7 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     margin-top: 180px;
 }
 .content1>.newsroom>ul>li>dl>dt>span{color: orangered;}
-.content1>.newsroom>ul>li>dl>dd{font-size: 21px; line-height: 1;font-weight: bold;letter-spacing: -1;}
+.content1>.newsroom>ul>li>dl>dd{font-size: 21px; line-height: 1;font-weight: bold;letter-spacing: -1px;}
 
 .content1>.newsroom>ul>li:hover{
     box-shadow: 10px 20px 50px rgb(200, 202, 215);
@@ -307,7 +307,7 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     width: 900px;height: 350px;overflow: hidden;
 }
 .content2>.component>ul:nth-of-type(2)>li>a>div{
-    margin-left: -36px;
+    margin-left: -20px;
 }
 .content2>.component>ul>li>a>div>img{
     object-fit: contain;
@@ -337,7 +337,7 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     margin-left: 15px;overflow: hidden;
 }
 .content2>.component>ul:hover>li>a>div>img{
-    scale: 1.1;
+    transform: scale( 1.1 );
 }
 .content2>.component>ul:hover>li>a>ul>li>span{
     background-color: blue;color: #fff;
@@ -364,7 +364,7 @@ a.btn_next{right: 30px; background-position: -30px 0;}
     transition: all 1s ease;
 }
 .introduce>ul>li:hover{
-    scale: 1.1;filter: brightness(50%);
+    transform: scale( 1.1 );filter: brightness(50%);
 }
 .introduce>ul>li:hover>a>ul>li>h3{
     color: #fff;filter: brightness(100%);
@@ -372,9 +372,11 @@ a.btn_next{right: 30px; background-position: -30px 0;}
 .introduce>ul>li>a{
     color: #fff;
 }
-.introduce>ul>li>a>h2{
-   text-align: center;padding-top: 300px;display: inline-block;
-   font-size: 34px;line-height: 2;
+.introduce>ul>li>a>h2>img{
+   padding-top: 300px;display: inline-block;
+}
+.introduce>ul>li>a>span{
+    text-align: center; font-size: 34px;line-height: 2;
 }
 .introduce>ul>li>a>p{
     margin-top: 20px;
