@@ -26,7 +26,7 @@
                 <nav class="gnb">
                     <h2 class="blind">주메뉴</h2>
                     <ul>
-                        <li><a href="#">기업정보</a>
+                        <li><a href="#container">기업정보</a>
                             <div>
                                 <ul>
                                 <li><a href="#">기업소개</a>
@@ -69,6 +69,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">행동규범</a></li>
+                            <ul>
                                 <div class="gnb_button">
                                     <a href="#" target="_blank" title="새 창으로 바로가기">
                                         <strong>온라인홍보관</strong>
@@ -320,8 +321,8 @@
                 <form>
                     <fieldset>
                         <legend class="blind">통합 검색</legend>
-                        <label for="srch" class="blind">검색어를 입력해주세요.</label>
-                        <input type="search" id="srch" placeholder="파트넘버를 입력하세요." />
+                        <label for="srch2" class="blind">검색어를 입력해주세요.</label>
+                        <input type="search" id="srch2" placeholder="파트넘버를 입력하세요." />
                         <button type="button">검색 버튼</button>
                     </fieldset>
                 </form>
@@ -382,8 +383,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-               
+                </div>              
             <!-- //contnet2 -->
             </div>  
             <div class="introduce">
@@ -391,9 +391,9 @@
                     <li>
                         <a href="#">
                             <h2>
-                                <img src="images/ico_company01.png" alt="ESG 아이콘">
-                            <p>기업소개</p> 
+                                <img src="images/ico_company01.png" alt="ESG 아이콘">                           
                             </h2>
+                            <span> 기업소개</span>
                             <p>
                                 삼성전기는 첨단 전자부품에서 기계부품까지 생산하는<br />
                                 세계적인 종합부품 제조회사입니다.
@@ -406,8 +406,8 @@
                         <a href="#">
                             <h2>
                                 <img src="images/ico_company02.png" alt="ESG 아이콘">
-                                <p>ESG</p>
                             </h2>
+                            <span>ESG</span>
                             <p>
                                 첨단 기술업계를 선도하는 혁신기업으로 도약하기 위해<br />
                                 다양한 이해관계자와의 신뢰를 바탕으로 지속가능경영을 실천하고 있습니다.
@@ -513,18 +513,7 @@
         <a class="btn_top">TOP</a>
     </div>
     <!-- //footer -->
+    </div>
 </div>
-<!-- <script>
-    async function fetchHtmlAsText(url) {
-        const response = await fetch(url);
-        return await response.text();
-    }
-    
-    async function importPage(target) {
-        document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-    }
-    importPage('header');
-    importPage('footer');
-    </script> -->
 </body>
 </html>
